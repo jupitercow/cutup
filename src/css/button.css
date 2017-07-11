@@ -1,7 +1,4 @@
-.Page-skip:focus,
-#wp-submit,
-.action button,
-.button {
+%button {
 	background-color: var(--highlightColor);
 	border: none;
 	border-bottom: 1px solid #bf9546;
@@ -32,53 +29,8 @@
 	}
 }
 
+#wp-submit,
 .action button,
-.button--form {
-	background: transparent;
-	border: 1px solid var(--green);
-	color: white;
-	min-width: 100px;
-	padding: 8px 12px 6px;
-
-	&:hover,
-	&:focus {
-		background-color: var(--green);
-		border-color: var(--green);
-		color: white;
-	}
-}
-
-.button--outline {
-	background: transparent;
-	color: white;
-	border: 2px solid var(--highlightColor);
-	padding-bottom: 11px;
-	padding-top: 12px;
-
-	&:hover,
-	&:focus {
-		background-color: color(var(--highlightColor) lightness(40%));
-		border-color: color(var(--highlightColor) lightness(40%));
-	}
-}
-
-.button--dark {
-	background: var(--green);
-	color: white;
-
-	&:hover,
-	&:focus {
-		background-color: var(--greenDark);
-		color: white;
-	}
-}
-
-.button--simple {
-	background: transparent;
-	border: none;
-}
-
-.Page-skip:focus {
-	border-radius: 0 !important;
-	outline: none;
+.button {
+	@extend %button;
 }

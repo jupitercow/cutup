@@ -57,36 +57,6 @@ Use the clearfix class to clear floated items: .u-cf
 	}
 }
 
-.u-topArrow {
-	position: relative;
-
-	&::after {
-		border: 62px solid transparent;
-		border-bottom: 35px;
-		border-top: 35px solid white;
-		content: '';
-		display: block;
-		left: 50%;
-		position: absolute;
-		top: 0;
-		transform: translateX(-50%);
-	}
-}
-
-.u-buttonGrid {
-	& .button {
-		float: right;
-		margin-left: 0;
-		margin-right: 0;
-		min-width: 0;
-		width: calc(50% - (var(--gutter) / 2));
-
-		&:nth-child(odd) {
-			float: left;
-		}
-	}
-}
-
 a.u-close {
 	color: var(--linkColor);
 

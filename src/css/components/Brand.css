@@ -1,0 +1,44 @@
+.Brand {
+	color: white;
+	margin: 0 auto;
+	width: 70%;
+
+	& svg {
+		width: 100%;
+	}
+
+	&-logo {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	&-tag {
+		margin: 0 auto var(--gutter);
+		width: 83%;
+	}
+
+	&--header {
+		margin: var(--gutter) 0 var(--gutter) var(--gutter);
+		max-width: 70%;
+		width: 200px;
+		z-index: 101;
+	}
+
+	&--footer {
+		max-width: 244px;
+		padding: 0 var(--gutter);
+		width: 100%;
+	}
+
+	@media (--v_medium) {
+		&--header {
+			float: left;
+			margin-left: var(--margin);
+			width: 220px;
+		}
+
+		&--footer {
+			float: left;
+		}
+	}
+}

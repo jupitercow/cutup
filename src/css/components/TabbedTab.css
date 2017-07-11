@@ -1,0 +1,59 @@
+.TabbedTab {
+	text-align: center;
+
+	&-content {
+		padding-bottom: var(--contentPadding);
+		padding-top: var(--contentPadding);
+	}
+
+	&--left {
+		& .TabbedTab-content {
+			text-align: left;
+		}
+	}
+
+	&--right {
+		& .TabbedTab-content {
+			text-align: right;
+		}
+	}
+
+	&--simple {
+		& .TabbedTab-content {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 610px;
+		}
+	}
+
+	&--js {
+		& .TabbedTab {
+			display: block;
+			height: 0;
+			overflow: hidden;
+
+			&.is-active {
+				height: auto;
+			}
+		}
+	}
+}
+
+.Tabbed--js {
+	& .TabbedTab {
+		display: block;
+		height: 0;
+		overflow: hidden;
+
+		&.is-active {
+			height: auto;
+		}
+	}
+}
+
+#Tab-Watch {
+	background: var(--grayDark);
+	& .u-wrap {
+		max-width: 610px;
+	}
+}

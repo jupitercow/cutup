@@ -11,6 +11,7 @@ function nav_toggleDrawer(e) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
 	mobileNav = document.getElementById('MobileNav');
 	container = document.getElementById('Page');
 
@@ -25,4 +26,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		navOverlay.addEventListener('click', nav_toggleDrawer);
 		container.appendChild(navOverlay);
 	}
+
 });

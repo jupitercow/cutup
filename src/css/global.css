@@ -15,10 +15,19 @@ body {
 
 svg {
 	fill: currentColor;
+
+	&.icon {
+		display: inline-block;
+		vertical-align: baseline;
+	}
+
+	& use {
+		pointer-events: none;
+	}
 }
 
 ::selection {
-	background: var(--linkColor);
+	background: var(--highlightColor);
 	text-shadow: none;
 }
 

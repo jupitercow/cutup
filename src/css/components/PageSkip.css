@@ -1,0 +1,6 @@
+.PageSkip:focus {
+	@extend %button;
+
+	border-radius: 0 !important;
+	outline: none;
+}

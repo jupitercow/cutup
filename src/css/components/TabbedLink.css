@@ -1,29 +1,5 @@
-.Tabbed {
-	text-align: center;
-
-	&--js {
-		& .Tabbed-tab {
-			display: none;
-
-			&.is-active {
-				display: block;
-			}
-		}
-	}
-}
-
-.TabbedNav {
-	background: var(--green);
-
-	&-list {
-		margin: 0;
-		padding: 0 var(--gutter);
-		width: 100%;
-	}
-
-	&-item {
-		
-	}
+.TabbedLink {
+	display: block;
 
 	&-link {
 		color: white;
@@ -59,16 +35,6 @@
 	}
 
 	@media (--v_small) {
-		&-list {
-			display: flex;
-			justify-content: space-between;
-			margin-left: auto;
-			margin-right: auto;
-			max-width: 610px;
-		}
-
-		&-item {
-			display: inline-block;
-		}
+		display: inline-block;
 	}
 }

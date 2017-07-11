@@ -1,0 +1,33 @@
+.PagetopNav {
+	background: $accent;
+	border: none;
+	bottom: var(--margin);
+	cursor: pointer;
+	display: none;
+	height: 50px;
+	opacity: 1;
+	position: fixed;
+	right: var(--margin);
+	transition: visibility 0s, opacity 0.3s linear;
+	visibility: visible;
+	width: 50px;
+	z-index: 99;
+
+	& svg {
+		fill: none;
+		left: 50%;
+		position: absolute;
+		stroke: white;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 18px;
+	}
+
+	&:hover {
+		background: var(--gray);
+	}
+
+	@media (--v_medium) {
+		display: block;
+	}
+}
