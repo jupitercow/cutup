@@ -1,0 +1,20 @@
+.Title {
+	&--bar {
+		margin-bottom: var(--margin);
+		padding-bottom: var(--margin);
+		position: relative;
+
+		&::after {
+			background: var(--highlightColor);
+			bottom: -3px;
+			content: '';
+			display: block;
+			height: 6px;
+			left: 50%;
+			max-width: 410px;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 90%;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.SingleSlides {
+	background: white;
+	padding: var(--contentPadding) 0;
+	position: relative;
+	text-align: center;
+
+	&-header {
+		color: var(--grayDark);
+		text-align: center;
+	}
+
+	@media (--v_medium) {
+		& .u-close {
+			right: 20px;
+			top: 20px;
+		}
+	}
+}

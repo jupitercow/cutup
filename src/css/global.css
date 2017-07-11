@@ -1,0 +1,62 @@
+html,
+body {
+	background: black;
+	margin: 0;
+	min-height: 100vh;
+	min-width: 100%;
+	overflow: auto;
+	padding: 0;
+	position: relative;
+}
+
+body {
+	overflow: hidden;
+}
+
+svg {
+	fill: currentColor;
+}
+
+::selection {
+	background: var(--linkColor);
+	text-shadow: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: var(--linkColor);
+	}
+
+	&:active {
+		color: white;/*color(var(--linkHover) blackness(10%));*/
+	}
+
+	&:link {
+		-webkit-tap-highlight-color: color(var(--linkColor) alpha(50%));
+	}
+}
+
+hr {
+	clear: both;
+	border: 0;
+	border-bottom: 1px solid var(--highlightColor);
+	border-top: 1px solid #DDD;
+	display: block;
+	height: 0;
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.Header
+.Main,
+.Footer {
+	text-align: left;
+}

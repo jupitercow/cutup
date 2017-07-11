@@ -1,0 +1,121 @@
+/*
+@styleguide
+
+# Clearfix
+
+Use the clearfix class to clear floated items: .u-cf
+
+<div class="u.cf"></div>
+
+	<div class="u.cf"></div>
+*/
+.u-cf {
+	&::after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+}
+/* @end */
+
+.u-wrap {
+	margin: 0 auto;
+	max-width: 936px;
+	overflow: auto;
+	padding: 0 var(--gutter);
+	width: 100%;
+
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+.u-modal {
+	background: white;
+	bottom: 0;
+	font-size: 0.75rem;
+	font-weight: 300;
+	height: 100vh;
+	left: 0;
+	opacity: 0;
+	overflow: auto;
+	padding: var(--gutter);
+	position: fixed;
+	right: 0;
+	text-align: left;
+	top: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	visibility: hidden;
+	z-index: 1000;
+
+	&:target {
+		height: 100%;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.u-topArrow {
+	position: relative;
+
+	&::after {
+		border: 62px solid transparent;
+		border-bottom: 35px;
+		border-top: 35px solid white;
+		content: '';
+		display: block;
+		left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+	}
+}
+
+.u-buttonGrid {
+	& .button {
+		float: right;
+		margin-left: 0;
+		margin-right: 0;
+		min-width: 0;
+		width: calc(50% - (var(--gutter) / 2));
+
+		&:nth-child(odd) {
+			float: left;
+		}
+	}
+}
+
+a.u-close {
+	color: var(--linkColor);
+
+	&:hover {
+		color: white;
+	}
+}
+
+.u-close {
+	background: transparent;
+	font-size: 45px;
+	height: 50px;
+	line-height: 60px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	width: 50px;
+
+	&:hover {
+		background: var(--green);
+	}
+}
+
+.u-hide {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.u-remove {
+	display: none;
+}

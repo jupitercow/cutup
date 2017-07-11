@@ -1,0 +1,141 @@
+#form_11ac096f-b407-45ea-8000-8e1e6ce6513a {
+	color: white;
+    display: flex;
+    align-items: center;
+    height: 200px;
+    justify-content: center;
+
+	& form {
+		width: 100%;
+	}
+}
+
+.form_pages {
+	padding: var(--gutter) var(--gutter) 0;
+
+	& > div {
+		position: relative;
+		overflow: hidden;
+	}
+
+	&::after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+}
+
+div.form_question {
+	background: black;
+	clear: none !important;
+	display: inline-block;
+	margin: 0 !important;
+	padding: 0 0 var(--gutter) !important;
+	width: 256px;
+
+	/* First */
+	&.form_question_b9f2aa1b-63ff-4f6a-95a9-80e46ace057b {
+		padding-right: var(--gutter) !important;
+		width: 128px;
+	}
+
+	/* Last */
+	&.form_question_24861d88-f1d6-4bc8-8627-1014d258768d {
+		width: 128px;
+	}
+}
+
+input,
+select,
+textarea {
+	border: none;
+	border-bottom: 1px solid var(--green);
+	border-radius: 0 !important;
+	font-size: 0.75em !important;
+	font-weight: normal;
+	left: 0;
+	height: 16px;
+	line-height: 1 !important;
+	outline: 0;
+	padding: 2px 4px;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	&:focus,
+	&:valid {
+		/*background: white;*/
+		color: white;/*var(--purple);*/
+	}
+
+	&:valid,
+	&:focus {
+		& + label {
+			background: var(--green);
+			color: white;
+			margin-top: -16px;
+			padding: 1px 6px;
+			text-transform: uppercase;
+			top: 100%;
+			z-index: 2;
+		}
+	}
+/** /
+	&:focus:required:invalid {
+		border: 2px solid red;
+		& + label {
+			background: red;
+		}
+	}
+/**/
+}
+
+select {
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-top-right-radius: 0px !important;
+}
+
+label {
+	bottom: calc(var(--gutter) + 2px);
+	color: white;
+	font-size: 0.75em !important;
+	font-weight: normal;
+	left: 0;
+	height: 16px;
+	line-height: 1 !important;
+	padding: 2px 4px;
+	position: absolute;
+	text-align: left;
+	transition: /* not padding */
+		background 0.2s,
+		color 0.2s,
+		top 0.2s,
+		bottom 0.2s,
+		right 0.2s,
+		left 0.2s;
+	width: 100%;
+}
+
+textarea {
+	display: block;
+	resize: vertical;
+}
+
+.form_textarea {
+	clear: both;
+}
+
+.action {
+	background: none;
+	margin-top: var(--gutter);
+	padding: 0 var(--gutter);
+	text-align: right;
+
+	& button {
+		float: right;
+		margin: 0;
+	}
+}

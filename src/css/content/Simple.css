@@ -1,0 +1,18 @@
+.Simple {
+	background: white;
+	padding: var(--contentPadding) var(--margin);
+	position: relative;
+
+	&-header {
+		color: var(--greenDark);
+	}
+
+	&-content {
+		margin: 0 auto;
+		max-width: 700px;
+	}
+
+	@media (--v_medium) {
+		text-align: center;
+	}
+}

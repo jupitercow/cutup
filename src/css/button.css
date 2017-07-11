@@ -1,0 +1,84 @@
+.Page-skip:focus,
+#wp-submit,
+.action button,
+.button {
+	background-color: var(--highlightColor);
+	border: none;
+	border-bottom: 1px solid #bf9546;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	font-family: var(--sansSerif);
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin: 0 calc(var(--gutter) / 2) var(--gutter);
+	min-width: 160px;
+	outline: none !important;
+	padding: 14px 12px 12px;
+	position: relative;
+	text-align: center;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: color(var(--highlightColor) lightness(40%));
+		border-color: color(var(--highlightColor) lightness(40%));
+		color: black;
+		text-decoration: none;
+	}
+}
+
+.action button,
+.button--form {
+	background: transparent;
+	border: 1px solid var(--green);
+	color: white;
+	min-width: 100px;
+	padding: 8px 12px 6px;
+
+	&:hover,
+	&:focus {
+		background-color: var(--green);
+		border-color: var(--green);
+		color: white;
+	}
+}
+
+.button--outline {
+	background: transparent;
+	color: white;
+	border: 2px solid var(--highlightColor);
+	padding-bottom: 11px;
+	padding-top: 12px;
+
+	&:hover,
+	&:focus {
+		background-color: color(var(--highlightColor) lightness(40%));
+		border-color: color(var(--highlightColor) lightness(40%));
+	}
+}
+
+.button--dark {
+	background: var(--green);
+	color: white;
+
+	&:hover,
+	&:focus {
+		background-color: var(--greenDark);
+		color: white;
+	}
+}
+
+.button--simple {
+	background: transparent;
+	border: none;
+}
+
+.Page-skip:focus {
+	border-radius: 0 !important;
+	outline: none;
+}

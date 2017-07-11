@@ -1,0 +1,32 @@
+:root {
+	/* Colors */
+	--blueDark: #001a72;
+	--cloudDark: #7b6c6d;
+	--cloudLight: #c2b3b4;
+	--gray: #666;
+	--grayDark: #333;
+	--grayLight: #c3c3c3;
+	--green: #397d91;
+	--greenDark: #0b5a6d;
+	--greenLight: #59a5bc;
+	--greenLighter: #e8f0f1;
+	--greenYellow: #7ba789;
+	--yellow: #efba58;
+	--gold: #d1ccbd;
+	/* layout */
+	--highlightColor: var(--yellow);
+	--linkColor: var(--green);
+	--linkHover: color(var(--linkColor) lightness(20%));
+	--textColor: #676d68;
+	--gutter: 12px;
+	--margin: calc(var(--gutter) * 2);
+	--contentPadding: 90px;
+	/* Fonts */
+	--sansSerif: "Franklin ITC", "Proxima Nova", Helvetica, Arial, sans-serif;
+	--serif: 'PT Serif', Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+@custom-media --v_small (min-width: 480px);
+@custom-media --v_medium (min-width: 768px);
+@custom-media --v_nav (min-width: 875px);
+@custom-media --v_large (min-width: 1024px);

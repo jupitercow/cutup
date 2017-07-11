@@ -1,0 +1,122 @@
+.Banner {
+	position: relative;
+	text-align: center;
+
+	& h1 {
+		text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.6);
+	}
+
+	&-slides {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+		padding: var(--contentPadding) 0;
+		position: relative;
+		width: 100%;
+	}
+
+	&-content {
+		color: white;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 640px;
+		width: 75%;
+
+		& p {
+			font-size: 1.125em;
+		}
+	}
+
+	&--left {
+		text-align: left;
+
+		& .Banner-content {
+			max-width: 936px;
+			padding: 0 var(--margin);
+			width: 100%;
+		}
+
+		& .button {
+			margin-left: 0;
+			margin-right: var(--gutter);
+		}
+	}
+
+	&--right {
+		text-align: right;
+
+		& .Banner-content {
+			float: right;
+			max-width: 936px;
+			padding: 0 var(--margin);
+			width: 100%;
+		}
+	}
+
+	&--page {
+		border-bottom: 3px solid var(--highlightColor);
+	}
+
+	&--slides {
+		& .Banner-image {
+			min-height: 400px;
+		}
+	}
+
+	&--fullHeight {
+		& .Banner-image {
+			min-height: 90vh;
+			padding: 0;
+			padding-bottom: 80px;
+		}
+	}
+
+	@media (--v_medium) {
+		&-content {
+			width: 90%;
+		}
+
+		&--slides,
+		&--page {
+			& .Banner-image {
+				min-height: 525px;
+			}
+		}
+
+		&--page {
+			& .Banner-content {
+				left: 50%;
+				position: absolute;
+				top: 50%;
+				transform: translate(-50%, -50%);
+
+				& > h1,
+				& > h2,
+				& > h3,
+				& > h4,
+				& > p {
+					width: 50%;
+				}
+			}
+		}
+
+		&--fullHeight {
+			& .Banner-image {
+				min-height: 100vh;
+			}
+
+			& .Banner-content {
+				left: 50%;
+				position: absolute;
+				top: 40%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}

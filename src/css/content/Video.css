@@ -1,0 +1,15 @@
+.Video {
+	margin-bottom: var(--margin);
+	position: relative;
+
+	&-icon {
+		color: white;
+		height: 50%;
+		left: 50%;
+		opacity: 0.4;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: auto;
+	}
+}

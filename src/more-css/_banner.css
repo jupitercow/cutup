@@ -1,0 +1,142 @@
+.Banner {
+	background: #afc0d4 url(../img/ice-bg-1024.jpg) no-repeat center top;
+	background-size: cover;
+	padding: var(--gutter);
+	position: relative;
+	width: 100%;
+
+	@media only screen and (max-width: 240px) {
+		background-image: url(../img/ice-bg-240.jpg);
+	}
+	@media only screen and (min-width: 241px) and (max-width: 360px) {
+		background-image: url(../img/ice-bg-360.jpg);
+	}
+	@media only screen and (min-width: 361px) and (max-width: 480px) {
+		background-image: url(../img/ice-bg-480.jpg);
+	}
+	@media only screen and (min-width: 481px) and (max-width: 640px) {
+		background-image: url(../img/ice-bg-640.jpg);
+	}
+	@media only screen and (min-width: 641px) and (max-width: 800px) {
+		background-image: url(../img/ice-bg-800.jpg);
+	}
+	@media only screen and (min-width: 801px) and (max-width: 1024px) {
+		background-image: url(../img/ice-bg-1024.jpg);
+	}
+	@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+		background-image: url(../img/ice-bg-1280.jpg);
+	}
+	@media only screen and (min-width: 1281px) and (max-width: 2000px) {
+		background-image: url(../img/ice-bg-2000.jpg);
+	}
+	@media only screen and (min-width: 2000px) {
+		background-image: url(../img/ice-bg.jpg);
+	}
+}
+
+.Banner-modal {
+	background: color(var(--purple) alpha(-36%));
+	font-weight: 600;
+	margin: 0 auto;
+	padding: var(--gutter);
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 100;
+	width: 100%;
+
+	& p {
+		margin-bottom: 0;
+	}
+
+	& img {
+		display: none;
+	}
+}
+
+.Banner-header {
+	border-bottom: 1px solid var(--purple);
+	margin-bottom: var(--gutter);
+	& h1 br {
+		display: block;
+	}
+}
+
+.Banner-action {
+	background: color(var(--purple) alpha(-36%));
+	display: block;
+	font-weight: 600;
+	line-height: 1;
+	margin: var(--gutter) auto 0;
+	padding: calc(var(--gutter) / 2) 2.25rem calc(var(--gutter) / 2) calc(var(--gutter) / 2);
+	position: relative;
+	text-transform: uppercase;
+	width: 150px;
+
+	&,
+	&:visited {
+		color: white;
+	}
+
+	& span {
+		display: inline-block;
+		font-size: 2em;
+		font-weight: 300;
+		position: absolute;
+		right: 1.25rem;
+		top: 0.25rem;
+		transform: rotate(90deg);
+	}
+
+	&:hover {
+		background: var(--purple);
+		color: var(--purple) !important;
+	}
+}
+
+@media (--v_small) {
+	.Banner {
+		height: 100vh;
+		min-height: 530px;
+		padding: 0;
+	}
+
+	.Banner-modal {
+		left: 55%;
+		max-height: 90%;
+		max-width: 600px;
+		position: absolute;
+		top: 60%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		width: 70%;
+		padding-left: 5.5rem;
+
+		& img {
+			display: block;
+			left: 0;
+			position: absolute;
+			width: 145px;
+			top: 0;
+			transform: translate(-55%, -20%);
+		}
+	}
+
+	.Banner-action {
+		bottom: 2.5%;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+	}
+}
+
+@media (--v_medium) {
+	.Banner-modal {
+		& img {
+			transform: translate(-55%, -45%);
+		}
+	}
+
+	.Banner-action {
+		bottom: 8%;
+	}
+}

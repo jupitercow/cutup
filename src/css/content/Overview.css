@@ -1,0 +1,47 @@
+.Overview {
+	background: white;
+
+	&-wrap {
+		overflow: visible;
+		padding-bottom: var(--contentPadding);
+		padding-top: var(--contentPadding);
+		position: relative;
+	}
+
+	&-header {
+		color: var(--greenDark);
+		padding: 0 var(--gutter) var(--margin);
+	}
+
+	&-content {
+		padding: 0 var(--gutter);
+	}
+
+	&-side {
+		color: var(--greenDark);
+		font-size: 0.875em;
+		padding: 0 var(--gutter);
+
+		& .button {
+			margin-bottom: var(--margin);
+			margin-left: 0;
+			margin-right: var(--gutter);
+		}
+	}
+
+	@media (--v_medium) {
+		&-wrap {
+			padding-top: var(--contentPadding);
+		}
+
+		&-content {
+			float: left;
+			width: 50%;
+		}
+
+		&-side {
+			float: right;
+			width: 41%;
+		}
+	}
+}

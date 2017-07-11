@@ -1,0 +1,177 @@
+body {
+	font-size: 100%;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	color: var(--textColor);
+	font-family: var(--sansSerif);
+	fill: var(--textColor);
+}
+
+h1,
+h2 {
+	clear: both;
+	
+	& a {
+		text-decoration: none;
+	}
+	
+	& br {
+		display: none;
+	}
+}
+
+h1 {
+	font-size: 3.5em;
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1;
+	margin: 0 0 var(--gutter);
+	text-transform: uppercase;
+	
+	& span {
+		font-weight: 300;
+	}
+}
+
+h2 {
+	font-size: 1.875em;/*2.25em;*/
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1;
+	margin: 0 0 calc(var(--margin) * 2);
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.125em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+h4 {
+	font-family: var(--serif);
+	font-size: 0.875em;
+	font-style: italic;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+h5, .h5 {
+	font-size: 0.75em;
+	font-weight: 900;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 var(--margin);
+	& br {
+		display: none;
+	}
+}
+
+@media (--v_medium) {
+	h1 {
+		font-size: 4.5em;
+	}
+	h1,
+	h2,
+	p {
+		& br {
+			display: block;
+		}
+	}
+}
+
+dfn,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: var(--gutter) 0;
+}
+
+cite {
+	font-style: normal;
+	padding: 8px 0;
+}
+
+address {
+	margin: 0 0 var(--margin);
+}
+
+strong {
+	font-weight: bold;
+}
+
+pre {
+	background: black;
+	color: white;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 0.9em;
+	margin: 0 0 var(--margin);
+	max-width: 100%;
+	padding: var(--gutter);
+	overflow: auto;
+}
+
+abbr, acronym {
+	cursor: help;
+}
+
+.u-content {
+	font-weight: 300;
+
+	& a {
+		color: var(--textColor);
+		text-decoration: underline;
+	}
+	
+	& br {
+		display: none;
+	}
+	
+	& table {
+		margin: 0 0 var(--margin);
+		width: 100%;
+	}
+	
+	& th {
+		font-weight: bold;
+	}
+	
+	& ul,
+	& ol {
+		margin: 0 0 var(--margin) var(--gutter);
+	}
+	
+	& ul {
+		list-style: disc;
+	}
+	
+	& ol {
+		list-style: decimal;
+	}
+	
+	& li {
+		margin-bottom: var(--margin);
+		
+		& > ul,
+		& > ol {
+			margin-bottom: 0;
+			margin-left: 1em;
+		}
+	}
+	
+	@media (--v_medium) {
+		& br {
+			display: block;
+		}
+	}
+}
